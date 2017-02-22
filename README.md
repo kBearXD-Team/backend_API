@@ -19,10 +19,6 @@ yarn
 Start server:
 ```sh
 
-# Export .env variables
-export JWT_SECRET=0a6b944d-d2fb-46fc-a85e-0295c986cd9f
-export MONGO_HOST=mongodb://localhost/taiwan_shrimp-development
-
 # Start server
 yarn start
 
