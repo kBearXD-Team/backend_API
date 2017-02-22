@@ -27,7 +27,7 @@ export MONGO_HOST=mongodb://localhost/express-mongoose-es6-rest-api-development
 yarn start
 
 # Selectively set DEBUG env var to get logs
-DEBUG=express-mongoose-es6-rest-api:* yarn start
+DEBUG=taiwan_shrimp:* yarn start
 ```
 Refer [debug](https://www.npmjs.com/package/debug) to know how to selectively turn on logs.
 
