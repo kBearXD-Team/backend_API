@@ -47,12 +47,6 @@ function list(req, res, next) {
     .then(novels => res.json(novels))
     .catch(e => next(e));
 }
-function list2(req, res, next) {
-  const { limit = 50, skip = 0 } = req.query;
-  Novel.list({ limit, skip })
-    .then(novels => res.json(novels))
-    .catch(e => next(e));
-}
 
 /**
  * Delete novel.
