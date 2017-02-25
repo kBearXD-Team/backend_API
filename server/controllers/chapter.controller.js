@@ -43,7 +43,7 @@ function create(req, res, next) {
  * @returns {Chapter}
  */
 function update(req, res, next) {
-  const chapter = req.Chapter;
+  const chapter = req.chapter;
   chapter.author = req.body.author || chapter.author;
   chapter.content = req.body.content || chapter.content;
   chapter.rate = req.body.rate || chapter.rate;
