@@ -12,15 +12,15 @@ router.get('/health-check', (req, res) =>
 );
 
 // mount user routes at /users
-router.use('/user', userRoutes);
+router.use('/users', userRoutes);
 
 // mount auth routes at /auth
 router.use('/auth', authRoutes);
 
 // mount novel routes at /novels
-router.use('/novel', novelRoutes);
+router.use('/novels', novelRoutes);
 
 // mount chapter routes at /chapters
-router.use('/chapter', chapterRoutes);
+router.use('/chapters', chapterRoutes);
 
 export default router;
