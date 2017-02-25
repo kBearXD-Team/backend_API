@@ -88,4 +88,4 @@ function submit(req, res, next) {
     .catch(e => next(e));
 }
 
-export default { load, get, create, list, remove, take, submit ,list2};
+export default { load, get, create, list, remove, take, submit};
