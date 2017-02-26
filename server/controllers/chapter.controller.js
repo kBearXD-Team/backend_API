@@ -47,7 +47,7 @@ function update(req, res, next) {
   chapter.author = req.body.author || chapter.author;
   chapter.content = req.body.content || chapter.content;
   chapter.rate = req.body.rate || chapter.rate;
-  chapter.updatedAt = Date.now,
+  chapter.updatedAt = Date.now(),
 
   chapter.save()
     .then(savedUser => res.json(savedUser))

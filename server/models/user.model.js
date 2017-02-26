@@ -4,6 +4,8 @@ import httpStatus from 'http-status';
 import bcrypt from 'bcrypt';
 import APIError from '../helpers/APIError';
 
+const SALT_WORK_FACTOR = 10;
+
 /**
  * User Schema
  */
