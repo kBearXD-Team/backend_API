@@ -14,7 +14,7 @@ router.route('/')
 
 router.route('/fb/:facebookId')
   /** GET /api/users/fb/:facebookId - Get users by facebook id*/
-  .get(userCtrl.get)
+  .get(userCtrl.get);
 
 router.route('/:userId')
   /** GET /api/users/:userId - Get user */

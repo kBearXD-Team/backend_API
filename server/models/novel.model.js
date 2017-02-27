@@ -13,7 +13,7 @@ const NovelSchema = new mongoose.Schema({
   },
   status: {
     type: String,
-    default: "open",
+    default: 'open',
   },
   timeLimit: {
     type: Number,

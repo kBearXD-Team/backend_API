@@ -17,7 +17,7 @@ const ChapterSchema = new mongoose.Schema({
   },
   status: {
     type: String,
-    default: "open",
+    default: 'open',
   },
   novel: {
     type: mongoose.Schema.Types.ObjectId,
