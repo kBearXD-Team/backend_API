@@ -29,7 +29,6 @@ function get(req, res) {
 function create(req, res, next) {
   const user = new User({
     username: req.body.username,
-    password: req.body.password,
     facebook_id: req.body.facebook_id,
     description: req.body.description || "",
     novels: req.body.novels || [],
