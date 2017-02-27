@@ -11,6 +11,14 @@ function load(req, res, next, id) {
     })
     .catch(e => next(e));
 }
+function loadByFid(req, res, next, fid) {
+  User.find({ facebook_id: fid})
+    .then((user) => {
+      req.user = user; 
+      return next();
+    })
+    .catch(e => next(e));
+}
 
 /**
  * Get user
@@ -81,4 +89,4 @@ function remove(req, res, next) {
     .catch(e => next(e));
 }
 
-export default { load, get, create, update, list, remove };
+export default { load, loadByFid, get, create, update, list, remove };

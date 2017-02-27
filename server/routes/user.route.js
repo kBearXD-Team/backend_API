@@ -12,6 +12,10 @@ router.route('/')
   /** POST /api/users - Create new user */
   .post(validate(paramValidation.createUser), userCtrl.create);
 
+router.route('/fb/:facebookId')
+  /** GET /api/users/fb/:facebookId - Get users by facebook id*/
+  .get(userCtrl.get)
+
 router.route('/:userId')
   /** GET /api/users/:userId - Get user */
   .get(userCtrl.get)
@@ -24,5 +28,6 @@ router.route('/:userId')
 
 /** Load user when API with userId route parameter is hit */
 router.param('userId', userCtrl.load);
+router.param('facebookId', userCtrl.loadByFid);
 
 export default router;
