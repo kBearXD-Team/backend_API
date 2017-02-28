@@ -1,8 +1,8 @@
 {
   "name": "taiwan_shrimp",
   "version": "0.0.1",
-  "description": "Backend runtime for story-teller",
-  "author": "Yu-Hemg Wang <phisixersai@gmail.com>",
+  "description": "API server for story-teller",
+  "author": "Yu-Heng Wang <phisixersai@gmail.com>",
   "main": "index.js",
   "private": false,
   "engines": {
