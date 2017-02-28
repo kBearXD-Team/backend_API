@@ -81,7 +81,7 @@ function submit(req, res, next) {
   const novel = req.novel;
   novel.chapters.push(req.body.chapter);
   novel.status = "closed";
-  novel.updatedAt = Date.now,
+  novel.updatedAt = Date.now(),
 
   novel.save()
     .then(submittedNovel => res.json(submittedNovel))
