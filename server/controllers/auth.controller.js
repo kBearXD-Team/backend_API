@@ -20,17 +20,17 @@ const user = {
 function login(req, res, next) {
   // Ideally you'll fetch this from the db
   // Idea here was to show how jwt works with simplicity
-  User.find({ username: user.username }, function(err, user) {
+  User.find({ username: req.body.username }, function(err, user) {
     if (err) return next(err);
     user.comparePassword(req.body.password, function(err, isMatch) {
       if (err) return next(err);
       if (isMatch) {
         const token = jwt.sign({
-          username: user.username
+          username: req.body.username
         }, config.jwtSecret);
         return res.json({
           token,
-          username: user.username
+          username: req.body.username
         });
       }
     });
